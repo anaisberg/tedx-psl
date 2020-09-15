@@ -46,8 +46,8 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                À 52 ans, Benoît Lecomte a nagé 80 jours et 555 km dans le vortex du Pacifique, surnommé le « continent de plastique », 
-                entre Hawaï et la Californie. 
+                À 52 ans, Benoît Lecomte a nagé 80 jours et 555 km dans le vortex du Pacifique, surnommé le « continent de plastique »,
+                entre Hawaï et la Californie.
                 Une expédition pour sensibiliser au problème de la pollution plastique, et récolter des données scientifiques.
                 </p>
               </CardBody>
@@ -88,7 +88,7 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                Les noms des speakers seront publiés un à un deux semaines avant le début de la conférence. 
+                Les noms des speakers seront publiés un à un deux semaines avant le début de la conférence.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -121,7 +121,7 @@ export default function TeamSection() {
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  Les noms des speakers seront publiés un à un deux semaines avant le début de la conférence. 
+                  Les noms des speakers seront publiés un à un deux semaines avant le début de la conférence.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -156,8 +156,7 @@ export default function TeamSection() {
               <Button
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=jHKWpPcd6rE&list=PL1COokRtyptky4Q7TWOnR59dCe&ab_channel=LoQiiHD"
-                target="_blank"
+                href="/speakers"
                 rel="noopener noreferrer"
               >
                 En savoir plus
