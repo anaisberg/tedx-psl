@@ -3,7 +3,6 @@ import { container, primaryColor } from "assets/jss/material-kit-react.js";
 const footerStyle = {
   block: {
     color: "inherit",
-    padding: "0.9375rem",
     fontWeight: "500",
     fontSize: "12px",
     textTransform: "uppercase",
@@ -47,6 +46,7 @@ const footerStyle = {
   inlineBlock: {
     display: "inline-block",
     padding: "0px",
+    textAlign: "center",
     width: "auto"
   },
   icon: {

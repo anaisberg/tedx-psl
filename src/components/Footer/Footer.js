@@ -12,6 +12,11 @@ import { makeStyles } from "@material-ui/core/styles";
 import Favorite from "@material-ui/icons/Favorite";
 
 import styles from "assets/jss/material-kit-react/components/footerStyle.js";
+import GridItem from "../Grid/GridItem";
+import GridContainer from "../Grid/GridContainer";
+
+import logo from "assets/img/logoHoriz.png";
+import Button from "../CustomButtons/Button";
 
 const useStyles = makeStyles(styles);
 
@@ -29,57 +34,59 @@ export default function Footer(props) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-        <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
+        <div className={classes.center}>
+          <ListItem className={classes.inlineBlock}>
+            <a
                 href="https://www.creative-tim.com/?ref=mkr-footer"
                 className={classes.block}
                 target="_blank"
-              >
-                Creative Tim
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/presentation?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                About us
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="http://blog.creative-tim.com/?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Blog
-              </a>
-            </ListItem>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/license?ref=mkr-footer"
-                className={classes.block}
-                target="_blank"
-              >
-                Licenses
-              </a>
-            </ListItem>
-          </List>
+            >
+              © TEDxPSL 2020
+            </a>
+              Cet événement TEDx est organisé de façon indépendante sous license TED.
+          </ListItem>
         </div>
-        <div className={classes.right}>
-          &copy; {1900 + new Date().getYear()} , made with{" "}
-          <Favorite className={classes.icon} /> by{" "}
-          <a
-            href="https://www.creative-tim.com?ref=mkr-footer"
-            className={aClasses}
-            target="_blank"
-          >
-            Creative Tim
-          </a>{" "}
-          for a better web.
+      </div>
+      <div className={classes.container}>
+        <div className={classes.center}>
+          <ListItem className={classes.inlineBlock}>
+            <a href="https://www.creative-tim.com/presentation?ref=mkr-footer"
+               className={classes.block}
+               target="_blank">
+              A propos
+            </a>
+            <a href="http://blog.creative-tim.com/?ref=mkr-footer"
+               className={classes.block}
+               target="_blank">
+              Evenements
+            </a>
+            <a href="https://www.creative-tim.com/license?ref=mkr-footer"
+               className={classes.block}
+               target="_blank">
+              Partenaires
+            </a>
+          </ListItem>
+        </div>
+      </div>
+      <div className={classes.container}>
+        <div className={classes.center}>
+          <ListItem className={classes.inlineBlock}>
+            <a href="https://www.facebook.com/TEDxPSL"
+               className={classes.block}
+               target="_blank">
+              Facebook
+            </a>
+            <a className={classes.block}
+               href="https://www.linkedin.com/in/anaïs-schlienger-06a117177/"
+               target="_blank">
+              LinkedIn
+            </a>
+            <a href="https://www.instagram.com/tedxpsl"
+               className={classes.block}
+               target="_blank">
+              Instagram
+            </a>
+          </ListItem>
         </div>
       </div>
     </footer>
