@@ -50,9 +50,8 @@ export default function Footer(props) {
       <div className={classes.container}>
         <div className={classes.center}>
           <ListItem className={classes.inlineBlock}>
-            <a href="https://www.creative-tim.com/presentation?ref=mkr-footer"
-               className={classes.block}
-               target="_blank">
+            <a href="/about"
+               className={classes.block}>
               A propos
             </a>
             <a href="http://blog.creative-tim.com/?ref=mkr-footer"
@@ -60,9 +59,8 @@ export default function Footer(props) {
                target="_blank">
               Evenements
             </a>
-            <a href="https://www.creative-tim.com/license?ref=mkr-footer"
-               className={classes.block}
-               target="_blank">
+            <a href="/partenaires"
+               className={classes.block}>
               Partenaires
             </a>
           </ListItem>

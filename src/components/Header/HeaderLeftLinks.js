@@ -36,18 +36,16 @@ export default function HeaderLeftLinks(props) {
         </ListItem>
       <ListItem className={classes.listItem}>
         <Button
-          href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+          href="/speakers"
           color="transparent"
-          target="_blank"
           className={classes.navLink}
         > Speakers
         </Button>
       </ListItem>
         <ListItem className={classes.listItem}>
             <Button
-                href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+                href="/partenaires"
                 color="transparent"
-                target="_blank"
                 className={classes.navLink}
             > Partenaires
             </Button>
