@@ -1,0 +1,78 @@
+import React from "react";
+// nodejs library that concatenates classes
+import classNames from "classnames";
+// @material-ui/core components
+import { makeStyles } from "@material-ui/core/styles";
+
+// @material-ui/icons
+
+// core components
+import Header from "components/Header/Header.js";
+import Footer from "components/Footer/Footer.js";
+import GridContainer from "components/Grid/GridContainer.js";
+import GridItem from "components/Grid/GridItem.js";
+import Button from "components/CustomButtons/Button.js";
+import HeaderLinks from "components/Header/HeaderLinks.js";
+import Parallax from "components/Parallax/Parallax.js";
+import HeaderLeftLinks from "components/Header/HeaderLeftLinks.js";
+
+import styles from "assets/jss/material-kit-react/views/landingPage.js";
+
+// Sections for this page
+import ProductSection from "views/LandingPage/Sections/ProductSection.js";
+import TeamSection from "views/LandingPage/Sections/TeamSection.js";
+import WorkSection from "views/LandingPage/Sections/WorkSection.js";
+
+
+const dashboardRoutes = [];
+
+const useStyles = makeStyles(styles);
+
+export default function About(props) {
+    const classes = useStyles();
+    const { ...rest } = props;
+    return (
+        <div>
+            <Header
+                color="transparent"
+                routes={dashboardRoutes}
+                brand="Accueil"
+                leftLinks={<HeaderLeftLinks />}
+                rightLinks={<HeaderLinks />}
+                fixed
+                changeColorOnScroll={{
+                    height: 400,
+                    color: "white"
+                }}
+                {...rest}
+            />
+            <Parallax filter image={require("assets/img/header.jpg")}>
+                <div className={classes.container}>
+                    <GridContainer>
+                        <GridItem xs={12} sm={12} md={6}>
+                            <Button
+                                style={{ marginTop: '350px' }}
+                                color="danger"
+                                size="lg"
+                                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <i className="fas fa-play" />
+                                Watch video
+                            </Button>
+                        </GridItem>
+                    </GridContainer>
+                </div>
+            </Parallax>
+            <div className={classNames(classes.main, classes.mainRaised)}>
+                <div className={classes.container}>
+                    <ProductSection />
+                    <TeamSection />
+                    <WorkSection />
+                </div>
+            </div>
+            <Footer />
+        </div>
+    );
+}

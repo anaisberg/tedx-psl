@@ -51,19 +51,13 @@ export default function HeaderLinks(props) {
       </ListItem> */}
         <ListItem className={classes.listItem}>
             <Button
-                href="https://www.creative-tim.com/product/material-kit-react?ref=mkr-navbar"
+                href="/about"
                 color="transparent"
-                target="_blank"
                 className={classes.navLink}
             > A propos
             </Button>
         </ListItem>
       <ListItem className={classes.listItem}>
-        {/*<Tooltip title="Delete">
-          <IconButton aria-label="Delete">
-            <DeleteIcon />
-          </IconButton>
-        </Tooltip>*/}
         <Tooltip
           id="instagram-twitter"
           title="Follow us on LinkedIn"
