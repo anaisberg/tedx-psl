@@ -34,21 +34,9 @@ export default function Footer(props) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-<<<<<<< HEAD
-        <div className={classes.left}>
-          <List className={classes.list}>
-            <ListItem className={classes.inlineBlock}>
-              <a
-                href="https://www.creative-tim.com/?ref=mkr-foot er"
-=======
         <div className={classes.center}>
           <ListItem className={classes.inlineBlock}>
-            <a
-                href="https://www.creative-tim.com/?ref=mkr-footer"
->>>>>>> cc1f127f69c28f7330c19f78f31e113ae94f9ea5
-                className={classes.block}
-                target="_blank"
-            >
+            <a className={classes.block}>
               © TEDxPSL 2020
             </a>
               Cet événement TEDx est organisé de façon indépendante sous license TED.
