@@ -54,7 +54,7 @@ export default function LandingPage(props) {
                   style={{ marginTop: '350px' }}
                 color="danger"
                 size="lg"
-                href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ref=creativetim"
+                href="https://www.youtube.com/watch?v=jHKWpPcd6rE&list=PL1COokRtyptky4Q7TWOnR59dCe&ab_channel=LoQiiHD"
                 target="_blank"
                 rel="noopener noreferrer"
               >

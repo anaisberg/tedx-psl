@@ -16,9 +16,9 @@ import CardFooter from "components/Card/CardFooter.js";
 
 import styles from "assets/jss/material-kit-react/views/landingPageSections/teamStyle.js";
 
-import team1 from "assets/img/faces/avatar.jpg";
-import team2 from "assets/img/faces/christian.jpg";
-import team3 from "assets/img/faces/kendall.jpg";
+import team1 from "assets/img/faces/ben-lecomte.jpg";
+import team2 from "assets/img/faces/anonym.jpg";
+import team3 from "assets/img/faces/anonym.jpg";
 
 const useStyles = makeStyles(styles);
 
@@ -31,7 +31,7 @@ export default function TeamSection() {
   );
   return (
     <div className={classes.section}>
-      <h2 className={classes.title}>Here is our team</h2>
+      <h2 className={classes.title}>Speakers</h2>
       <div>
         <GridContainer>
           <GridItem xs={12} sm={12} md={4}>
@@ -40,40 +40,39 @@ export default function TeamSection() {
                 <img src={team1} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Gigi Hadid
+                Benoît Lecomte
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Athlète</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                À 52 ans, Benoît Lecomte a nagé 80 jours et 555 km dans le vortex du Pacifique, surnommé le « continent de plastique », 
+                entre Hawaï et la Californie. 
+                Une expédition pour sensibiliser au problème de la pollution plastique, et récolter des données scientifiques.
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-twitter"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-instagram"} />
-                </Button>
-                <Button
-                  justIcon
-                  color="transparent"
-                  className={classes.margin5}
-                >
-                  <i className={classes.socials + " fab fa-facebook"} />
-                </Button>
+                <a href="https://twitter.com/benlecomteswim?lang=en"
+                   target="_blank">
+                  <Button
+                    justIcon
+                    color="transparent"
+                    className={classes.margin5}
+                  >
+                    <i className={classes.socials + " fab fa-twitter"} />
+                  </Button>
+                </a>
+                <a href="https://www.instagram.com/thevortexswim/?hl=en"
+                   target="_blank"
+                   >
+                  <Button
+                    justIcon
+                    color="transparent"
+                    className={classes.margin5}
+                  >
+                    <i className={classes.socials + " fab fa-instagram"} />
+                  </Button>
+                </a>
               </CardFooter>
             </Card>
           </GridItem>
@@ -83,16 +82,13 @@ export default function TeamSection() {
                 <img src={team2} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Christian Louboutin
+                Pas encore révélé
                 <br />
                 <small className={classes.smallTitle}>Designer</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                Les noms des speakers seront publiés un à un deux semaines avant le début de la conférence. 
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -119,16 +115,13 @@ export default function TeamSection() {
                 <img src={team3} alt="..." className={imageClasses} />
               </GridItem>
               <h4 className={classes.cardTitle}>
-                Kendall Jenner
+                Pas encore révélé
                 <br />
-                <small className={classes.smallTitle}>Model</small>
+                <small className={classes.smallTitle}>Cook</small>
               </h4>
               <CardBody>
                 <p className={classes.description}>
-                  You can write here details about one of your team members. You
-                  can give more details about what they do. Feel free to add
-                  some <a href="#pablo">links</a> for people to be able to
-                  follow them outside the site.
+                  Les noms des speakers seront publiés un à un deux semaines avant le début de la conférence. 
                 </p>
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
@@ -158,6 +151,19 @@ export default function TeamSection() {
           </GridItem>
         </GridContainer>
       </div>
+      <div className={classes.container}>
+          <GridContainer style={{ display: 'flex', align: 'center', justifyContent: 'center' }}>
+              <Button
+                color="danger"
+                size="lg"
+                href="https://www.youtube.com/watch?v=jHKWpPcd6rE&list=PL1COokRtyptky4Q7TWOnR59dCe&ab_channel=LoQiiHD"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                En savoir plus
+              </Button>
+          </GridContainer>
+        </div>
     </div>
   );
 }
