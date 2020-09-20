@@ -138,6 +138,18 @@ export default function LandingPage(props) {
                             }
                         ]}
                     />
+                    <div className={classes.container}>
+                        <GridContainer style={{ display: 'flex', align: 'center', justifyContent: 'center' }}>
+                            <Button
+                              color="danger"
+                              size="md"
+                              href="/speakers"
+                              rel="noopener noreferrer"
+                            >
+                              Billetterie
+                            </Button>
+                        </GridContainer>
+                    </div>
                 </GridItem>
             </GridContainer>
             <TeamSection />
