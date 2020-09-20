@@ -54,7 +54,8 @@ export default function TeamSection() {
               </CardBody>
               <CardFooter className={classes.justifyCenter}>
                 <a href="https://twitter.com/benlecomteswim?lang=en"
-                   target="_blank">
+                   target="_blank"
+                rel="noopener noreferrer">
                   <Button
                     justIcon
                     color="transparent"
@@ -65,6 +66,7 @@ export default function TeamSection() {
                 </a>
                 <a href="https://www.instagram.com/thevortexswim/?hl=en"
                    target="_blank"
+                   rel="noopener noreferrer"
                    >
                   <Button
                     justIcon
