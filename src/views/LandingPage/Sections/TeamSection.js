@@ -78,6 +78,7 @@ export default function TeamSection() {
                 </a>
                 <a href="https://en.wikipedia.org/wiki/Beno%C3%AEt_Lecomte"
                    target="_blank"
+                   rel="noopener noreferrer"
                    >
                   <Button
                     justIcon
