@@ -34,7 +34,6 @@ export default function Footer(props) {
   return (
     <footer className={footerClasses}>
       <div className={classes.container}>
-
         <div className={classes.center}>
           <ListItem className={classes.inlineBlock}>
           <img src={logo} alt="..." width="100" />

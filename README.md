@@ -163,7 +163,7 @@ material-kit-react
         ├── LandingPage
         │   ├── LandingPage.js
         │   └── Sections
-        │       ├── ProductSection.js
+        │       ├── PartenairesPreview.js
         │       ├── TeamSection.js
         │       └── WorkSection.js
         ├── LoginPage
