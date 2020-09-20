@@ -19,6 +19,7 @@ import styles from "assets/jss/material-kit-react/views/landingPageSections/team
 import team1 from "assets/img/faces/ben-lecomte.jpg";
 import team2 from "assets/img/faces/anonym.jpg";
 import team3 from "assets/img/faces/anonym.jpg";
+import DescriptionIcon from '@material-ui/icons/Description';
 
 const useStyles = makeStyles(styles);
 
@@ -71,6 +72,17 @@ export default function TeamSection() {
                     className={classes.margin5}
                   >
                     <i className={classes.socials + " fab fa-instagram"} />
+                  </Button>
+                </a>
+                <a href="https://en.wikipedia.org/wiki/Beno%C3%AEt_Lecomte"
+                   target="_blank"
+                   >
+                  <Button
+                    justIcon
+                    color="transparent"
+                    className={classes.margin5}
+                  >
+                    <DescriptionIcon fontSize="large" color="disabled" />
                   </Button>
                 </a>
               </CardFooter>

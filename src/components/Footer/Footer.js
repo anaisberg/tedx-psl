@@ -15,7 +15,7 @@ import styles from "assets/jss/material-kit-react/components/footerStyle.js";
 import GridItem from "../Grid/GridItem";
 import GridContainer from "../Grid/GridContainer";
 
-import logo from "assets/img/logoHoriz.png";
+import logo from "assets/img/TEDxPSL_noir_sans_fond.png";
 import Button from "../CustomButtons/Button";
 
 const useStyles = makeStyles(styles);
@@ -36,10 +36,14 @@ export default function Footer(props) {
       <div className={classes.container}>
         <div className={classes.center}>
           <ListItem className={classes.inlineBlock}>
-            <a className={classes.block}>
+          <img src={logo} alt="..." width="100" />
+              <div>Cet événement TEDx est organisé de façon indépendante sous license TED.</div>
+              <a
+                className={classes.block}
+                target="_blank"
+            >
               © TEDxPSL 2020
             </a>
-              Cet événement TEDx est organisé de façon indépendante sous license TED.
           </ListItem>
         </div>
       </div>
