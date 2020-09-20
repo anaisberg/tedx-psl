@@ -19,9 +19,13 @@ import HeaderLeftLinks from "components/Header/HeaderLeftLinks.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
-import ProductSection from "./Sections/ProductSection.js";
+import Partenaires from "./Sections/PartenairesPreview.js";
 import TeamSection from "./Sections/TeamSection.js";
 import WorkSection from "./Sections/WorkSection.js";
+import landing from "assets/img/profile-bg.jpg";
+import Dashboard from "@material-ui/icons/Dashboard";
+import Schedule from "@material-ui/icons/Schedule";
+import Presentation from "views/LandingPage/Sections/Presentation.js";
 
 
 const dashboardRoutes = [];
@@ -67,8 +71,77 @@ export default function LandingPage(props) {
       </Parallax>
       <div className={classNames(classes.main, classes.mainRaised)}>
         <div className={classes.container}>
-          <ProductSection />
-          <TeamSection />
+            <div className={classes.section}>
+                <h2 className={classes.title} >Présentation</h2>
+            </div>
+            <GridContainer>
+                <GridItem xs={12} sm={12} md={8} lg={6}>
+                    <img src={landing} alt="..." width="550"
+                        className={ classes.imgRaised + " " + classes.imgRounded + " " + classes.imgFluid} />
+                </GridItem>
+                <GridItem xs={12} sm={12} md={8} lg={6}>
+                    <Presentation
+                        color="red"
+                        horizontal={{
+                            tabsGrid: { xs: 12, sm: 4, md: 4 },
+                            contentGrid: { xs: 12, sm: 8, md: 8 }
+                        }}
+                        tabs={[
+                            {
+                                tabButton: "Thème",
+                                tabIcon: Dashboard,
+                                tabContent: (
+                                    <span>
+                        <p>
+                          Le thème de cette conférence est l'eau. TEDx PSL
+                        </p>
+                        <br />
+                        <p>
+                          Dramatically visualize customer directed convergence
+                          without revolutionary ROI. Collaboratively
+                          administrate empowered markets via plug-and-play
+                          networks. Dynamically procrastinate B2C users after
+                          installed base benefits.
+                        </p>
+                        <br />
+                        <p>
+                          Dramatically visualize customer directed convergence
+                          without revolutionary ROI. Collaboratively
+                          administrate empowered markets via plug-and-play
+                          networks. Dynamically procrastinate B2C users after
+                          installed base benefits.
+                        </p>
+                      </span>
+                                )
+                            },
+                            {
+                                tabButton: "Lieu",
+                                tabIcon: Schedule,
+                                tabContent: (
+                                    <span>
+                        <p>
+                          Efficiently unleash cross-media information without
+                          cross-media value. Quickly maximize timely
+                          deliverables for real-time schemas.
+                        </p>
+                        <br />
+                        <p>
+                          Dramatically maintain clicks-and-mortar solutions
+                          without functional solutions. Dramatically visualize
+                          customer directed convergence without revolutionary
+                          ROI. Collaboratively administrate empowered markets
+                          via plug-and-play networks. Dynamically procrastinate
+                          B2C users after installed base benefits.
+                        </p>
+                      </span>
+                                )
+                            }
+                        ]}
+                    />
+                </GridItem>
+            </GridContainer>
+            <TeamSection />
+          <Partenaires />
           <WorkSection />
         </div>
       </div>

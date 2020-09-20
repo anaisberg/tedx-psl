@@ -3,16 +3,20 @@ import { container, title } from "assets/jss/material-kit-react.js";
 const landingPageStyle = {
   container: {
     zIndex: "12",
-    color: "#FFFFFF",
+    color: "#999",
     ...container
+  },
+  section: {
+    padding: "10px 0",
+    textAlign: "center"
   },
   title: {
     ...title,
+    color: "#3C4858",
     display: "inline-block",
     position: "relative",
     marginTop: "30px",
     minHeight: "32px",
-    color: "#FFFFFF",
     textDecoration: "none"
   },
   subtitle: {

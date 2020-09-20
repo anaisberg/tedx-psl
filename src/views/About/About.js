@@ -19,7 +19,7 @@ import HeaderLeftLinks from "components/Header/HeaderLeftLinks.js";
 import styles from "assets/jss/material-kit-react/views/landingPage.js";
 
 // Sections for this page
-import ProductSection from "views/LandingPage/Sections/ProductSection.js";
+import Partenaires from "views/LandingPage/Sections/PartenairesPreview.js";
 import TeamSection from "views/LandingPage/Sections/TeamSection.js";
 import WorkSection from "views/LandingPage/Sections/WorkSection.js";
 
@@ -67,7 +67,7 @@ export default function About(props) {
             </Parallax>
             <div className={classNames(classes.main, classes.mainRaised)}>
                 <div className={classes.container}>
-                    <ProductSection />
+                    <Partenaires />
                     <TeamSection />
                     <WorkSection />
                 </div>
